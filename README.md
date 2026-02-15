@@ -120,7 +120,7 @@ DearDiary/
 │   ├── server.py              # Main FastAPI application
 │   ├── requirements.txt       # Python dependencies
 │   ├── .env                   # Environment variables
-│   └── .env.example          # Environment template
+│   
 ├── frontend/
 │   ├── src/
 │   │   ├── pages/
