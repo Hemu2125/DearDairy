@@ -1,0 +1,66 @@
+.App {
+  min-height: 100vh;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: rgb(62, 39, 35);
+}
+
+.book-container {
+  background: linear-gradient(to right, #F5F5DC 50%, #FDFBF7 50%);
+  box-shadow: 0 20px 60px -10px rgba(62, 39, 35, 0.2);
+}
+
+.book-spine {
+  box-shadow: inset 20px 0 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+.paper-texture {
+  background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+}
+
+.diary-editor {
+  font-family: 'Dancing Script', cursive;
+  line-height: 2.5;
+  color: #2C2C2C;
+}
+
+.diary-editor::placeholder {
+  color: #A1887F;
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+}
+
+.handwriting {
+  font-family: 'Dancing Script', cursive;
+}
+
+.serif-font {
+  font-family: 'Playfair Display', serif;
+}
+
+.body-font {
+  font-family: 'Crimson Text', serif;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.recording-pulse {
+  animation: pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

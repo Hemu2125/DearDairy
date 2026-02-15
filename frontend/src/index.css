@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Crimson+Text:wght@400;600&family=Dancing+Script:wght@400;700&family=Nunito:wght@300;400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: 'Crimson Text', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #FDFBF7;
+    background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@layer base {
+    :root {
+        --background: 39 20 5;
+        --foreground: 17 17 17;
+        --card: 253 251 247;
+        --card-foreground: 17 17 17;
+        --popover: 253 251 247;
+        --popover-foreground: 17 17 17;
+        --primary: 62 39 35;
+        --primary-foreground: 253 251 247;
+        --secondary: 93 64 55;
+        --secondary-foreground: 253 251 247;
+        --muted: 245 245 220;
+        --muted-foreground: 93 64 55;
+        --accent: 197 160 89;
+        --accent-foreground: 17 17 17;
+        --destructive: 183 28 28;
+        --destructive-foreground: 253 251 247;
+        --border: 215 204 200;
+        --input: 215 204 200;
+        --ring: 62 39 35;
+        --radius: 0.5rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply text-foreground;
+    }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}
