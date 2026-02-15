@@ -24,12 +24,16 @@ const Navbar = ({ user, showBackToDashboard = false }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-2">
+          <button
+            onClick={() => navigate('/dashboard')}
+            className="flex items-center gap-2 hover:opacity-80 transition-opacity cursor-pointer"
+            aria-label="Go to home"
+          >
             <BookOpen className="w-6 h-6 sm:w-8 sm:h-8 text-[#3E2723]" strokeWidth={1.5} />
             <span className="text-xl sm:text-2xl font-serif text-[#3E2723]" style={{ fontFamily: 'Playfair Display, serif' }}>
               DearDiary
             </span>
-          </div>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-3 lg:gap-4">

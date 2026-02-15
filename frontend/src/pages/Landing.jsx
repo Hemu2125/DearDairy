@@ -124,7 +124,7 @@ const Landing = () => {
 
       {/* Footer */}
       <footer className="py-8 px-6 text-center text-[#5D4037]">
-        <p className="text-sm">© 2025 DearDiary. Crafted with care for mindful writers.</p>
+        <p className="text-sm">© {new Date().getFullYear()} DearDiary. Crafted with care for mindful writers by Hemanth.</p>
       </footer>
     </div>
   );
