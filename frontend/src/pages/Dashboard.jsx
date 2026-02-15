@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 
 const DRAFT_STORAGE_KEY = 'diary-entry-draft';
-const AUTOSAVE_DELAY = 1000; // 5 seconds
+const AUTOSAVE_DELAY = 120000; // 2 minutes
 
 const Dashboard = ({ user }) => {
   const navigate = useNavigate();
