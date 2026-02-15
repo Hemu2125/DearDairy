@@ -119,10 +119,12 @@ DearDiary/
 ├── backend/
 │   ├── server.py              # Main FastAPI application
 │   ├── requirements.txt       # Python dependencies
-│   ├── .env                   # Environment variables
+│   └── .env                   # Environment variables
 │   
 ├── frontend/
 │   ├── src/
+│   │   ├──components/
+│   │   │   ├── Navbar.js     # Navbar component
 │   │   ├── pages/
 │   │   │   ├── App.js        # Main component
 │   │   │   ├── Landing.js    # Landing page
